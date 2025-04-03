@@ -12,6 +12,9 @@ public interface ConductorDAO {
     void actualizarConductor(Conductor conductor);
     void eliminarConductor(int id);
 
-    //
+    //Metodos adicionales (opcionales)
+    List<Conductor> buscarConductoresPorNombre(String nombre);
+    List<Conductor> buscarConductoresPorApellido(String apellido);
+    List<Conductor> buscarConductoresPorDpi(String dpi);
 
 }
