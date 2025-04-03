@@ -1,6 +1,6 @@
 package aplicacion_oneway.model;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class TucTuc {
     private int idTucTuc;
@@ -9,27 +9,26 @@ public class TucTuc {
     private String numeroPlaca;
     private String numeroMotor;
     private String numeroChasis;
-    private LocalDate fechaFabricacion;
+    private int anioFabricacion;
     private String color;
-    private LocalDate fechaAdquisicion;
+    private Date fechaAdquisicion;
     private String estado;
     private String observaciones;
     private int propietarioId;
 
-    public TucTuc() {
+    // Constructores, getters y setters
 
+    public TucTuc() {
     }
 
-    public TucTuc(int idTucTuc, String marca, String modelo, String numeroPlaca, String numeroMotor, String numeroChasis,
-                  LocalDate fechaFabricacion, String color, LocalDate fechaAdquisicion, String estado,
-                  String observaciones, int propietarioId) {
+    public TucTuc(int idTucTuc, String marca, String modelo, String numeroPlaca, String numeroMotor, String numeroChasis, int anioFabricacion, String color, Date fechaAdquisicion, String estado, String observaciones, int propietarioId) {
         this.idTucTuc = idTucTuc;
         this.marca = marca;
         this.modelo = modelo;
         this.numeroPlaca = numeroPlaca;
         this.numeroMotor = numeroMotor;
         this.numeroChasis = numeroChasis;
-        this.fechaFabricacion = fechaFabricacion;
+        this.anioFabricacion = anioFabricacion;
         this.color = color;
         this.fechaAdquisicion = fechaAdquisicion;
         this.estado = estado;
@@ -37,6 +36,7 @@ public class TucTuc {
         this.propietarioId = propietarioId;
     }
 
+    // Getters y setters para todos los atributos
     public int getIdTucTuc() {
         return idTucTuc;
     }
@@ -85,12 +85,12 @@ public class TucTuc {
         this.numeroChasis = numeroChasis;
     }
 
-    public LocalDate getFechaFabricacion() {
-        return fechaFabricacion;
+    public int getAnioFabricacion() {
+        return anioFabricacion;
     }
 
-    public void setFechaFabricacion(LocalDate fechaFabricacion) {
-        this.fechaFabricacion = fechaFabricacion;
+    public void setAnioFabricacion(int anioFabricacion) {
+        this.anioFabricacion = anioFabricacion;
     }
 
     public String getColor() {
@@ -101,11 +101,11 @@ public class TucTuc {
         this.color = color;
     }
 
-    public LocalDate getFechaAdquisicion() {
+    public Date getFechaAdquisicion() {
         return fechaAdquisicion;
     }
 
-    public void setFechaAdquisicion(LocalDate fechaAdquisicion) {
+    public void setFechaAdquisicion(Date fechaAdquisicion) {
         this.fechaAdquisicion = fechaAdquisicion;
     }
 
@@ -131,23 +131,5 @@ public class TucTuc {
 
     public void setPropietarioId(int propietarioId) {
         this.propietarioId = propietarioId;
-    }
-
-    @Override
-    public String toString() {
-        return "TucTuc{" +
-                "idTucTuc=" + idTucTuc +
-                ", marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", numeroPlaca='" + numeroPlaca + '\'' +
-                ", numeroMotor='" + numeroMotor + '\'' +
-                ", numeroChasis='" + numeroChasis + '\'' +
-                ", fechaFabricacion=" + fechaFabricacion +
-                ", color='" + color + '\'' +
-                ", fechaAdquisicion=" + fechaAdquisicion +
-                ", estado='" + estado + '\'' +
-                ", observaciones='" + observaciones + '\'' +
-                ", propietarioId=" + propietarioId +
-                '}';
     }
 }
