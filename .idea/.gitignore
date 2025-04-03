@@ -1,3 +1,20 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# Ignorar archivos de IntelliJ IDEA
+.idea/
+*.iml
+
+# Ignorar archivos de compilación
+target/
+*.class
+
+# Ignorar archivos de configuración
+*.log
+*.cache
+*.DS_Store
+
+# Ignorar dependencias de Maven
+.mvn/
+
