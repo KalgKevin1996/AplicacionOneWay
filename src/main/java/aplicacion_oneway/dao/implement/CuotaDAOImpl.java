@@ -1,7 +1,8 @@
-package aplicacion_oneway.dao;
+package aplicacion_oneway.dao.implement;
 
 import java.sql.Connection;
 
+import aplicacion_oneway.dao.CuotaDAO;
 import aplicacion_oneway.model.Cuota;
 import aplicacion_oneway.util.ConexionDB;
 
@@ -9,7 +10,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CuotaDAOImpl implements CuotaDAO{
+public class CuotaDAOImpl implements CuotaDAO {
     private Connection conexion = null;
 
     public CuotaDAOImpl(){
