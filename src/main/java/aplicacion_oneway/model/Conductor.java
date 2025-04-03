@@ -13,7 +13,7 @@ public class Conductor {
     private String telefono;
     private Date fechaContratacion;
     private String estado;
-    private String Observaciones;
+    private String observaciones;
     private String fotoConductor;
     private String fotoDpi;
     private String fotoLicencia;
@@ -39,7 +39,7 @@ public class Conductor {
         this.telefono = telefono;
         this.fechaContratacion = fechaContratacion;
         this.estado = estado;
-        Observaciones = observaciones;
+        this.observaciones = observaciones;
         this.fotoConductor = fotoConductor;
         this.fotoDpi = fotoDpi;
         this.fotoLicencia = fotoLicencia;
@@ -126,11 +126,11 @@ public class Conductor {
     }
 
     public String getObservaciones() {
-        return Observaciones;
+        return observaciones;
     }
 
     public void setObservaciones(String observaciones) {
-        Observaciones = observaciones;
+        observaciones = observaciones;
     }
 
     public String getFotoConductor() {
@@ -171,7 +171,7 @@ public class Conductor {
                 ", telefono='" + telefono + '\'' +
                 ", fechaContratacion=" + fechaContratacion +
                 ", estado='" + estado + '\'' +
-                ", Observaciones='" + Observaciones + '\'' +
+                ", Observaciones='" + observaciones + '\'' +
                 ", fotoConductor='" + fotoConductor + '\'' +
                 ", fotoDpi='" + fotoDpi + '\'' +
                 ", fotoLicencia='" + fotoLicencia + '\'' +
