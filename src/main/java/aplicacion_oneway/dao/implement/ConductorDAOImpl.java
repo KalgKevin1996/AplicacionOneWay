@@ -21,7 +21,10 @@ public class ConductorDAOImpl implements ConductorDAO {
 
     @Override
     public void crearConductor(Conductor conductor) {
-        String sql = "INSERT INTO conductor (ID_Conductor, Nombre, Apellido, Numero_DPI, Numero_Licencia, Fecha_Nacimiento, Direccion, Telefono, Fecha_Contratacion, Estado, Observaciones, Foto_Conductor, Foto_DPI, Foto_Licencia) " +
+        String sql = "INSERT INTO conductor (ID_Conductor, Nombre, Apellido, " +
+                "Numero_DPI, Numero_Licencia, Fecha_Nacimiento, Direccion, " +
+                "Telefono, Fecha_Contratacion, Estado, Observaciones, " +
+                "Foto_Conductor, Foto_DPI, Foto_Licencia) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
