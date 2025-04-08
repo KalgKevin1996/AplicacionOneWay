@@ -1,5 +1,5 @@
 package aplicacion_oneway.model;
-
+//hola desde la rama model
 import java.sql.Date;
 
 public class Conductor {
